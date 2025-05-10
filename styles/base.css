@@ -70,6 +70,7 @@ main {
   color: #000000;
   background: #cccccc;
   max-width: 1024px;
+  margin: 0 auto;
 }
 
 .card {
