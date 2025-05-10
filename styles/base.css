@@ -17,7 +17,7 @@ body {
 
 header {
   background-color: #333333;
-  height: 100px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,13 +31,19 @@ header h1 {
 
 nav {
   background-color: #000000;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul li {
@@ -49,6 +55,13 @@ nav ul li {
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  color: #000;
+  background-color: #cccccc;
 }
 main {
   display: grid;
@@ -56,6 +69,7 @@ main {
   flex-grow: 1;
   color: #000000;
   background: #cccccc;
+  max-width: 1024px;
 }
 
 .card {
