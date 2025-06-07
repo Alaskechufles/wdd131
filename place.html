@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Place - Diego A. Huarsaya Cruz</title>
+    <meta name="description"
+        content="W01 Assignment: Place - WDD 131 - Dynamic Web Fundamentals by Diego Andres Huarsaya Cruz">
+    <meta name="author" content="Diego Andres Huarsaya Cruz">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windChill.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Peru</h1>
+        <div class="divider"></div>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/peru-large.webp">
+            <img src="images/peru.webp" alt="Peru" width="500">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span>Area:</span> 1,285,215 km²</p>
+            <p><span>Population:</span> 33,359,418</p>
+            <p><span>Capital:</span> Lima</p>
+            <p><span>Currency:</span> Sol (PEN)</p>
+            <p><span>Language:</span> Spanish</p>
+            <p><span>Time Zone:</span> UTC-5</p>
+            <p><span>Calling Code:</span> +51</p>
+            <p><span>Internet TLD:</span> .pe</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p><span>Temperature:</span> <span id="temperature"></span>°C</p>
+            <p><span>Conditions:</span> <span id="conditions"></span></p>
+            <p><span>Wind:</span> <span id="windSpeed"></span> km/h</p>
+            <p><span>Wind Chill:</span> <span id="windChill"></span></p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415" />
+                <path
+                    d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1" />
+            </svg>
+        </section>
+    </main>
+    <div class="divider"></div>
+    <footer>
+
+        <p><span id="currentyear"></span> 🌋 Diego Andres Huarsaya Cruz 🌋 Peru - Arequipa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@media screen and (min-width: 800px) {
+  :root {
+    --primary-color: #024873;
+    --secondary-color: #ffffff;
+    --accent-color: #bfb304;
+    --text-color: #000000;
+    --background-color: #012e40;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  main section {
+    position: absolute;
+    background-color: var(--secondary-color);
+    box-shadow: -5px 0 6px rgb(0, 0, 0);
+  }
+  main {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("/images/peru-large.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  main img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .data {
+    left: 30px;
+  }
+  .weather {
+    right: 30px;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-align: end;
+    margin: 0 0 20px -150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .data h2 {
+    width: 200px;
+    padding: 10px 40px 10px 0;
+  }
+  .weather h2 {
+    width: 230px;
+    padding: 10px 20px 10px 0;
+  }
+}
