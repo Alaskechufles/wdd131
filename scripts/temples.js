@@ -6,9 +6,11 @@ const templesContainer = document.querySelector('.temples');
 
 hamburger.addEventListener('click', () => {
    navBox.classList.add('show');
+   
 });
 closeButton.addEventListener('click', () => {
     navBox.classList.remove('show');
+    
 });
 
 const card = `
