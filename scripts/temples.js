@@ -13,10 +13,12 @@ closeButton.addEventListener('click', () => {
 
 const card = `
     <div class="temple-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR32gFH3UyFl5apZsdE4RI6JpzwSyCuvE2CA&s" alt="Arequipa, Peru">
-            <h3>Arequipa, Peru</h3>
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR32gFH3UyFl5apZsdE4RI6JpzwSyCuvE2CA&s" alt="Arequipa, Peru">
+        <figcaption>Arequipa, Peru</figcaption>
+    </figure>
     </div>
 `
-for (let index = 0; index < 15; index++) {
+for (let index = 0; index < 10; index++) {
     templesContainer.innerHTML += card;
 }
