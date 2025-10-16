@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+:root {
+  --primary-color: #3c0a64;
+  --secondary-color: #ffffff;
+  --accent-color: #deebfd;
+  --text-color: #000000;
+  --background-color: #012e40;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.navlist {
+  display: none;
+}
+.navlist > li > a {
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.navlist > li > a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.navBox {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #3c0a64;
+  list-style: none;
+  width: 100vw;
+  right: 0;
+  top: 0;
+}
+.navBox > li > a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.navBox > li > a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.show {
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+}
+
+.hamburger,
+.close {
+  border: none;
+  background-color: #ffffff00;
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.temple-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.temple-card figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temple-card figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}

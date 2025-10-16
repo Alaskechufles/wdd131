@@ -1,0 +1,19 @@
+@media screen and (min-width: 800px) {
+    .hamburger{
+        display: none;
+    }
+    .navlist {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
+    .navlist> li > a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .navBox{
+        display: none;
+    }
+
+}
