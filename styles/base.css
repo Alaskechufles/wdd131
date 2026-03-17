@@ -21,16 +21,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #ffffff;
 }
 
 header h1 {
-  color: #ffffff;
   font-size: 16px;
   margin: 20px auto;
 }
 
 nav {
-  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
