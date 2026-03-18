@@ -5,6 +5,8 @@
     --accent-color: #bfb304;
     --text-color: #000000;
     --background-color: #012e40;
+    --linear-gradient-background: linear-gradient(#000000cc, #000000cc);
+    --box-shadow-color: #000000;
   }
   header h1 {
     font-size: 3rem;
@@ -12,11 +14,11 @@
   main section {
     position: absolute;
     background-color: var(--secondary-color);
-    box-shadow: -5px 0 6px rgb(0, 0, 0);
+    box-shadow: -5px 0 6px var(--box-shadow-color);
   }
   main {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    background: var(--linear-gradient-background),
       url("/images/peru-large.webp");
     background-size: cover;
     background-position: center;
